@@ -9,7 +9,7 @@ pipeline {
         }
         stage('run') {
             steps {
-                sh 'java -jar target/mvc-0.0.1-SNAPSHOT.jar'
+                sh 'docker-compose up -d --build'
             }
         }
     }
